@@ -17,7 +17,7 @@ public class Bacteria {
 
     private Timer t;
     private int Count = 1;
-    private double Temperature = 20;
+    public double Temperature = 20;
     private double ReferenceTemperature = 20;
     private double ReproductionRate = 1;
 
