@@ -59,13 +59,13 @@ public class Bacteria {
 
     private void Reproduce() {
 
-        t.schedule(
-                new java.util.TimerTask() {
-            @Override
-            public void run() {
+//        t.schedule(
+//                new java.util.TimerTask() {
+//            @Override
+//            public void run() {
                 Count *= ReproductionRate;
-            }
-        }, ReproductionInterval, ReproductionInterval);
+//            }
+//        }, 0, ReproductionInterval);
 
     }
 }

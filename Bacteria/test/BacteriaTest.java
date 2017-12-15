@@ -64,4 +64,15 @@ public class BacteriaTest {
         
     }
     
-}
+    @Test
+    public void testSetTemperature20() {
+        System.out.println("setTemperature20");
+        double Temperature = 20.0;
+        Bacteria instance = new Bacteria();
+        instance.setTemperature(Temperature);
+        instance.setTemperature(0.0);
+        assertEquals(2, instance.getCount()); 
+// TODO review the generated test code and remove the default call to fail.
+        
+    }
+    }
