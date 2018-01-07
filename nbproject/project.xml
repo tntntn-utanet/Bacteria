@@ -6,7 +6,7 @@
             <extension file="rest-build.xml" id="rest.5"/>
         </buildExtensions>
         <data xmlns="http://www.netbeans.org/ns/web-project/3">
-            <name>JSONRestWebServiceExample</name>
+            <name>Bacteria</name>
             <minimum-ant-version>1.6.5</minimum-ant-version>
             <web-module-libraries>
                 <library dirs="200">
@@ -108,7 +108,7 @@
             </web-module-libraries>
             <web-module-additional-libraries/>
             <source-roots>
-                <root id="src.dir" name="src"/>
+                <root id="src.src.dir"/>
             </source-roots>
             <test-roots/>
         </data>
