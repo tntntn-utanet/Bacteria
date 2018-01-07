@@ -1,5 +1,7 @@
 package Bacteria;
 
+import static java.lang.Math.round;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -12,7 +14,7 @@ package Bacteria;
  */
 public class Bacteria {
 
-    private static int Count = 1;
+    private static double Count = 1;
     public static double Temperature = 20;
     private static double ReferenceTemperature = 20;
     private static double ReproductionRate = 2;
@@ -22,7 +24,7 @@ public class Bacteria {
     }
 
     public static int getCount() {
-        return Count;
+        return (int) round(Count);
     }
 
     private static int ReproductionInterval = 1;    // 
@@ -34,13 +36,13 @@ public class Bacteria {
 
     private static void react() {
         if (Temperature < ReferenceTemperature) {
-            ReproductionRate = 1;
+            ReproductionRate = 1.1;
         }
         if (Temperature == ReferenceTemperature) {
-            ReproductionRate = 2;
+            ReproductionRate = 1.9;
         }
         if (Temperature > ReferenceTemperature) {
-            ReproductionRate = 3;
+            ReproductionRate = 2.2;
         }
 
         Reproduce();
