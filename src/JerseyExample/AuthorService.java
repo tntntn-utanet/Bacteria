@@ -26,8 +26,9 @@ import javax.ws.rs.core.Response;
 		Person p1 = new Person();
                 
 		p1.setId((new BacteriaResponse()).getBacteriaResponse());
-		p1.setName("Bacteria1");
+		p1.setName("Bacteria2");
 		listPerson.add(p1);
+                    System.out.println("Bacteria2");
 		return listPerson;
 	}
 //public List<Person> getTrackInJSON() {
@@ -51,8 +52,6 @@ import javax.ws.rs.core.Response;
 
         //return Response.created(msgURI).build();
         System.out.println(msg);
-                
-                
-                
+            
     }
 }
