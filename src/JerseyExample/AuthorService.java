@@ -9,6 +9,11 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import Bacteria.BacteriaResponse;
+import static java.lang.System.out;
+import java.net.URI;
+import java.net.URISyntaxException;
+import javax.ws.rs.POST;
+import javax.ws.rs.core.Response;
 
 @Path("/authors")
 //@Path("/AuthorService")
@@ -37,4 +42,17 @@ import Bacteria.BacteriaResponse;
 //		listPerson.add(p2);
 //		return listPerson;
 //	}
+//@Path("/authors")
+@POST
+    public void setValues(String msg) throws URISyntaxException {
+        //Message m = singleton.addMessage(msg);
+
+        //URI msgURI = ui.getRequestUriBuilder().path(Integer.toString(m.getUniqueId())).build();
+
+        //return Response.created(msgURI).build();
+        System.out.println(msg);
+                
+                
+                
+    }
 }
